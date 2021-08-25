@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1> Day-1 Assignment </h1>
+    <h1>Make a Simple Calculator Using JavaScript. 
+    </h1>
+    <p id="cls"></p>
+</head>
+<body>
+    <script>
+        var num1=prompt(("Enter number: "));
+        var num2=prompt(("Enter number: "));
+        var op=prompt("Enter operator +,-,*,/"); 
+
+        if(op=="+"){
+            s=parseInt(num1)+ parseInt(num2);
+
+        }else if( op=="-"){
+            s=parseInt(num1) - parseInt(num2);
+
+
+        }else if( op=="*"){
+            s=parseInt(num1) * parseInt(num2);
+
+
+        }else if(op=="/"){
+            s=parseInt(num1) / parseInt(num2);
+
+
+        }
+
+        
+        
+    document.getElementById("cls").innerHTML = "First number = " + num1 + "<br>" +" Second number = "+ num2 + "<br>"+ "operator = " + op + "<br>" + s ;
+    </script>
+    
+</body>
+</html>
